@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <center>
+        <h1>Welcome Page</h1>
+        <div>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            FirstName: <input type="text" id="fname" name="fname" required oninvalid="this.setCustomValidity('please enter valid Name Here')">
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            MiddelName:  <input id="username" type="text" value="mname" pattern="{6,}" autofocus required title="Please enter at least 5 characters">
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            LastName: <input type="text" id="lname" name="lname" placeholder="John" >
+                            <br/>
+                            <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password:<input type="password" name="password" pattern="[A-Za-z0-9@#$%^&*]{8,}" style="-webkit-text-security:square">
+                            <br>
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            MobileNO: <input type="text" name="mobileno" disabled>
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email: <input type="email" name="email">
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Age: <input type="number" id="age" name="Age" step="3">
+                            <br />
+                            <br />
+                        </td>
+                    <tr>
+                    <tr>
+                        <td>
+                            Gender:<input type="radio"id="m" name="Gender" value="Male">Male
+                            <input type="radio" id="f" name="Gender" value="Female">Female
+                            <br /><br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Select Course: <input list="courses" name="courses" />
+                            <datalist id="courses">
+                                <option value="BTECH">BTECH</option>
+                                <option value="Degree">Degree</option>
+                                <option value="MCA">MCA</option>
+                                <option value="MBA">MBA</option>
+                                <option value="MSC">MSC</option>
+                            </datalist>
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr>
+                        <td>
+                            Select group: <select name="groups" placeholder="Select">
+                                <optgroup label="btech Groups">
+                                    <option value="CSE">CSE</option>
+                                    <option value="IT">IT</option>
+                                    <option value="ECE">ECE</option>
+                                    <option value="EEE">EEE</option>
+                                </optgroup>
+                                <optgroup label="Degree Groups">
+                                    <option value="MPCS">MPCS</option>
+                                    <option value="MECS">MECS</option>
+                                    <option value="MPC">MPC</option>
+                                </optgroup>
+                                <option value="Other">Other</option>
+                            </select>
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
